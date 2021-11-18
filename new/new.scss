@@ -1,0 +1,39 @@
+body{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(plum, pink);
+}
+
+.allt{ //hela html i denna div class
+    display: flex;
+    margin: 10% 30% 30%;
+    background: lighten($color: #dd88ff, $amount: 0);
+    color: white;
+}
+
+.fylli{ //parent för select, button och choose
+    width: 100%;
+    flex-wrap: nowrap;
+}
+button{
+    color: white;
+    background-color: pink;
+
+}
+.allt form{
+    width: 100%;
+    margin: 1%; 
+}
+
+
+.listor{ //inkomst ugift och vinst
+    display: flex;
+    width: 100%;
+}
+h1{
+    // flex-direction: row;
+    justify-content: space-between;
+    border: 2px purple solid;
+}
+
