@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/new.css"> 
+    <link rel="stylesheet" href="./css/new.css">
     <script src="./new.js" defer></script>
 </head>
 
 <body>
 
-<div class="allt">
-    <div class="fylli">
-    <form>
-    <input type="text" class="text" placeholder="Skriv in text här">
-    <input type="belopp" class="belopp" placeholder=" ex. 100">
-
-    <select id="knapp">
-        <option value="choose"> Choose.. </option>
-        <option value="+"> + inkomst</option>
-        <option value="-"> - utgift </option>
-    </select>
-    <button> ADD </button>
-    </form>
-</div>
+    <div class="allt">
 
 
+        <div class="fylli">
+            <form>
+                <select id="knapp">
+                    <option value="choose"> Choose.. </option>
+                    <option value="+"> + inkomst</option>
+                    <option value="-"> - utgift </option>
+                </select>
+                <input type="text" class="text" placeholder="Skriv in text här">
+                <input type="belopp" class="belopp" placeholder=" ex. 100">
 
-<div class="listor">
-    <h1> Inkomst </h1>
-    <div class="inkomst-container"></div>
+                <button> ADD </button>
+                <!-- varje gång man klickar på ADD så ska de adderas ännu en knapp för removal,
+                men vänta för att kunna fixa med local storage
+            1. local storage
+            2. loop -->
+            </form>
+        </div>
 
-    <h1> Utgift </h1>
-    <div class="utgift-container"></div>
 
-    <h1> Vinst </h1>
-    <div class="vinst"></div>
-</div>
-</div>
+
+        <div class="listor">
+            <section>
+                <h1> Inkomst </h1>
+                <div class="inkomst-container"></div>
+            </section>
+
+
+            <section>
+                <h1> Utgift </h1>
+                <div class="utgift-container"></div>
+            </section></div>
+
+
+            <div class="total"> <!---denna ska in i en egen parent och ligga under utgift/inkomst-->
+                <h1> Vinst </h1>
+                <div class="vinst"></div>
+            </div>
+
+        
+
+    </div>
+    <!---stänger ALLT diven-->
 </body>
+
 </html>

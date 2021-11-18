@@ -32,7 +32,6 @@ function countBudget(e) {
 
     
     else if(select.value == "choose"){
-        
             alert ("ALERT! Du kan inte lämna fältet tomt!")
     }   
     

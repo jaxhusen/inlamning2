@@ -3,37 +3,63 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(plum, pink);
+    height: 756px;
+    //lägg till storlek & text font
 }
 
 .allt{ //hela html i denna div class
-    display: flex;
-    margin: 10% 30% 30%;
+    margin: 0 30%;
+    padding-top: 5%;
+    padding-bottom: 570px;
     background: lighten($color: #dd88ff, $amount: 0);
     color: white;
 }
 
-.fylli{ //parent för select, button och choose
+.allt .fylli{ //parent för select, button och choose
     width: 100%;
-    flex-wrap: nowrap;
-}
-button{
-    color: white;
-    background-color: pink;
-
-}
-.allt form{
-    width: 100%;
-    margin: 1%; 
-}
-
-
-.listor{ //inkomst ugift och vinst
     display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+}
+
+.fylli button{ //parent, button
+    height: 20px;
+    color: white; 
+    background-color: pink;
+}
+
+.listor{ //inkomst utgift och vinst
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
-h1{
-    // flex-direction: row;
-    justify-content: space-between;
+
+h1{// ÄNDRA STORLEK OCH FONT
     border: 2px purple solid;
+    color: white;
 }
+
+.inkomst-container{
+display: flex;
+flex-direction: column;
+color: lightgreen;
+background-color: white;
+padding: 4px;
+}
+
+.utgift-container{
+display: flex;
+flex-direction: column;
+color: rgb(255, 51, 51);
+background-color: white;
+padding: 4px;
+} 
+
+.vinst{ // OM vinst = + så gör grön text, ANNARS OM vinst = - gör röd
+    background-color: white;
+    color: pink;  
+    padding: 4px;
+}
+
+
 
