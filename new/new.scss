@@ -3,62 +3,101 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(plum, pink);
-    height: 756px;
-    //lägg till storlek & text font
+    height: 752px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .allt{ //hela html i denna div class
-    margin: 0 30%;
+    margin: 0 20%;
     padding-top: 5%;
-    padding-bottom: 570px;
+    padding-bottom: 500px;
     background: lighten($color: #dd88ff, $amount: 0);
     color: white;
 }
 
-.allt .fylli{ //parent för select, button och choose
-    width: 100%;
+.allt form{ //parent för select, button och choose
     display: flex;
-    justify-content: space-evenly;
-    margin: 1%;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    height: 35px;
+    margin: 0;
 }
 
 .fylli button{ //parent, button
     height: 20px;
     color: white; 
-    background-color: pink;
+    background-color: plum;
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
 }
 
 .listor{ //inkomst utgift och vinst
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-h1{// ÄNDRA STORLEK OCH FONT
+h1{
     border: 2px purple solid;
+    background-color: plum;
     color: white;
+    padding: 4px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    border: 2px purple solid;
+    background-color: plum;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 4px;
 }
 
 .inkomst-container{
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 color: lightgreen;
-background-color: white;
 padding: 4px;
+font-weight: bold;
+font-size: 20px;
+text-align: left;
 }
 
 .utgift-container{
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 color: rgb(255, 51, 51);
-background-color: white;
 padding: 4px;
+font-weight: bold;
+font-size: 20px;
+text-align: left;
+
 } 
 
 .vinst{ // OM vinst = + så gör grön text, ANNARS OM vinst = - gör röd
-    background-color: white;
     color: pink;  
-    padding: 4px;
+    padding: 40px;
+    font-weight: bold;
+    font-size: larger;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+button:hover{
+color: purple;
+cursor: pointer;
 }
 
 
